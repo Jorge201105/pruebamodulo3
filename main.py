@@ -33,11 +33,11 @@ opcion = validate(["0","1"], opcion)
 
 # 2. Definir el comportamiento de Salir
 if opcion == '0':
-    print()
+    print("Nos vemos pronto...!")
     time.sleep(2)
     os.system(op_sys)
     # finalizar programa
-    
+    exit() # esta sentencia se adiciona debido a que al oprimir 0 (salir) este continuaba preguntando la cantidad de preguntas
 
 # Funcionamiento de preguntas
 while correcto and n_pregunta < 3*p_level:
